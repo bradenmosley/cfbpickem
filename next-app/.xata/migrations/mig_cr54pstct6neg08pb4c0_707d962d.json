@@ -1,0 +1,16 @@
+{
+  "id": "mig_cr54pstct6neg08pb4c0",
+  "parentID": "mig_cr54pqtct6neg08pb4b0",
+  "checksum": "1:707d962db41e3b7ccdee8be80602228a3a0ed6e102486d31483e7c2cf68783fa",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "losses",
+          "type": "int"
+        },
+        "table": "records"
+      }
+    }
+  ]
+}

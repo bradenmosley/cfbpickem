@@ -1,0 +1,13 @@
+{
+  "id": "mig_cr57s0tct6neg08pb5sg",
+  "parentID": "mig_cr57rtlct6neg08pb5rg",
+  "checksum": "1:2814a6bf04ed4c208a34ec88f6dd17c8fb8eea7baa5f98804c5d2e7771b9e6eb",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "userId",
+        "table": "records"
+      }
+    }
+  ]
+}

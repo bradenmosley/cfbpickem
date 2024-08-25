@@ -1,0 +1,11 @@
+{
+  "id": "mig_cr54534fq47auujrufpg",
+  "checksum": "1:1881421afe8cf0cf7fa2ebc8a84e90b1176e7799b992a4382eb118120f6135dd",
+  "operations": [
+    {
+      "addTable": {
+        "table": "games"
+      }
+    }
+  ]
+}

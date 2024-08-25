@@ -1,0 +1,18 @@
+{
+  "id": "mig_cr57shiamasho2va07g0",
+  "parentID": "mig_cr57sb2amasho2va07f0",
+  "checksum": "1:1e1e775f400d3f57dc8112d87bd38df91b74a974914b7fcf44e399fa78412185",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "wins",
+          "type": "int",
+          "notNull": true,
+          "defaultValue": "100"
+        },
+        "table": "records"
+      }
+    }
+  ]
+}

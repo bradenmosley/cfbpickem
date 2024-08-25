@@ -1,0 +1,13 @@
+{
+  "id": "mig_cr57podct6neg08pb5lg",
+  "parentID": "mig_cr57pl5ct6neg08pb5kg",
+  "checksum": "1:1fdc634cdd477e4c25f2c4c5a93c70ad92ad7f2fc1ed819771a19a3985dbfb94",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "endDaten",
+        "table": "schedule"
+      }
+    }
+  ]
+}

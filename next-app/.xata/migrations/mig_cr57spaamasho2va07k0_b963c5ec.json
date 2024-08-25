@@ -1,0 +1,13 @@
+{
+  "id": "mig_cr57spaamasho2va07k0",
+  "parentID": "mig_cr57soqamasho2va07j0",
+  "checksum": "1:b963c5ec639fde48e8cbc66d334edc91d27fa6fe00f99d3bd35accd1bee7c100",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "team",
+        "table": "winners"
+      }
+    }
+  ]
+}

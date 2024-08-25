@@ -1,0 +1,16 @@
+{
+  "id": "mig_cr54s85ct6neg08pb4gg",
+  "parentID": "mig_cr54s25ct6neg08pb4fg",
+  "checksum": "1:c850bc66c56f564547b7a47ff7949b70fc12dea91d9fce5550504390218c4878",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "teamName",
+          "type": "text"
+        },
+        "table": "teams"
+      }
+    }
+  ]
+}

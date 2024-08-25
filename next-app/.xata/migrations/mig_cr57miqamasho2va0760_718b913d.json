@@ -1,0 +1,13 @@
+{
+  "id": "mig_cr57miqamasho2va0760",
+  "parentID": "mig_cr57mhlct6neg08pb5dg",
+  "checksum": "1:718b913da5112d43395278f56401364514cae0eeafa94ac962cd14f4c6c900ad",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "logo",
+        "table": "teams"
+      }
+    }
+  ]
+}

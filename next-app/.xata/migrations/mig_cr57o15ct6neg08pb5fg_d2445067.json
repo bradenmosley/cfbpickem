@@ -1,0 +1,13 @@
+{
+  "id": "mig_cr57o15ct6neg08pb5fg",
+  "parentID": "mig_cr57ndiamasho2va07ag",
+  "checksum": "1:d2445067a1854f5de0f58cb361dde20fafd712bb9c0fa2cce960f17e1373837a",
+  "operations": [
+    {
+      "renameTable": {
+        "newName": "schedule",
+        "oldName": "lock"
+      }
+    }
+  ]
+}

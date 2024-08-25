@@ -1,0 +1,16 @@
+{
+  "id": "mig_cr54e0qamasho2va05q0",
+  "parentID": "mig_cr54dhqamasho2va05p0",
+  "checksum": "1:cb356adb7bd00b1dddbb35060aad5268def90c00b317c237e605baa09d033a54",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "homeTeam",
+          "type": "text"
+        },
+        "table": "games"
+      }
+    }
+  ]
+}

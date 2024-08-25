@@ -1,0 +1,16 @@
+{
+  "id": "mig_cr54qr5ct6neg08pb4e0",
+  "parentID": "mig_cr54qktct6neg08pb4d0",
+  "checksum": "1:1f6a84342d80b754e6cc055b22259271ba02e9ca61031cacf18024f0f369ad0d",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "time",
+          "type": "datetime"
+        },
+        "table": "lock"
+      }
+    }
+  ]
+}

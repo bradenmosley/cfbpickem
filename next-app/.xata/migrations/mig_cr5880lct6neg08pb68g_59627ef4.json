@@ -1,0 +1,19 @@
+{
+  "id": "mig_cr5880lct6neg08pb68g",
+  "parentID": "mig_cr587sdct6neg08pb67g",
+  "checksum": "1:59627ef4dba9281765a3eab9ad8e3b0e12057f09bb7da88d1571999b95c5cdd1",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "logo",
+          "type": "file",
+          "file": {
+            "defaultPublicAccess": true
+          }
+        },
+        "table": "teams"
+      }
+    }
+  ]
+}

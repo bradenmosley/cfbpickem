@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://bradenmosley-s-workspace-6r97im.us-east-1.xata.sh/db/cfb-pick-em",
+  "codegen": {
+    "output": "xata.ts"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id": "mig_cr54pk5ct6neg08pb490",
+  "parentID": "mig_cr54phdct6neg08pb480",
+  "checksum": "1:2f206c957fc6d45532aeb7b7599d04e14016dae645417f78ba89d6689f0b1572",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "userId",
+          "type": "text"
+        },
+        "table": "records"
+      }
+    }
+  ]
+}

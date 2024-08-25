@@ -1,0 +1,13 @@
+{
+  "id": "mig_cr57s2lct6neg08pb5ug",
+  "parentID": "mig_cr57s1lct6neg08pb5tg",
+  "checksum": "1:2977fe5a186da2552dd27a9795db8dc9ffebb7f3ff9afd08a9347baa0581bde0",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "wins",
+        "table": "records"
+      }
+    }
+  ]
+}

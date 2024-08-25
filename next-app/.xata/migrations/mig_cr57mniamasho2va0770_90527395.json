@@ -1,0 +1,18 @@
+{
+  "id": "mig_cr57mniamasho2va0770",
+  "parentID": "mig_cr57miqamasho2va0760",
+  "checksum": "1:90527395a42f5ff5ea0fdab4657b696ced91103ebc67fb97c6674dccdf3721f1",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "teamName",
+          "type": "text",
+          "notNull": true,
+          "defaultValue": "null"
+        },
+        "table": "teams"
+      }
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "mig_cr54qktct6neg08pb4d0",
+  "parentID": "mig_cr54qgaamasho2va06c0",
+  "checksum": "1:9bc6e1020a414c491b6fac0cdcfd855af39405380962177b8bdeb728ce056777",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "weekNumber",
+          "type": "int",
+          "unique": true
+        },
+        "table": "lock"
+      }
+    }
+  ]
+}

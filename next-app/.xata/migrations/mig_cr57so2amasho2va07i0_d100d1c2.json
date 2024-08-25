@@ -1,0 +1,13 @@
+{
+  "id": "mig_cr57so2amasho2va07i0",
+  "parentID": "mig_cr57sk2amasho2va07h0",
+  "checksum": "1:d100d1c201f623f0879068ded3dd8a3231fc96bf96d75b181914c66071e43a06",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "weekNumber",
+        "table": "winners"
+      }
+    }
+  ]
+}

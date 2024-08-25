@@ -1,0 +1,18 @@
+{
+  "id": "mig_cr57rtlct6neg08pb5rg",
+  "parentID": "mig_cr57rqlct6neg08pb5qg",
+  "checksum": "1:82b787d58a3a04979961819814962041456f234042bbb78265894698bf56367f",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "pick",
+          "type": "text",
+          "notNull": true,
+          "defaultValue": "null"
+        },
+        "table": "picks"
+      }
+    }
+  ]
+}

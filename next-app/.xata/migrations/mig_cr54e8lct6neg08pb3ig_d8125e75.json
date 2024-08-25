@@ -1,0 +1,13 @@
+{
+  "id": "mig_cr54e8lct6neg08pb3ig",
+  "parentID": "mig_cr54e6qamasho2va05v0",
+  "checksum": "1:d8125e75c772160d1e4ce2906121a15103dfd1e8c476b30db6f45e7ee08ade42",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "weekNumber",
+        "table": "games"
+      }
+    }
+  ]
+}

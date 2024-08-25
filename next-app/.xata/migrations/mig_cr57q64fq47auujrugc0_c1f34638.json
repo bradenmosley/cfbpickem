@@ -1,0 +1,18 @@
+{
+  "id": "mig_cr57q64fq47auujrugc0",
+  "parentID": "mig_cr57puaamasho2va07c0",
+  "checksum": "1:c1f34638162bc03e770c1b2416a2edf8d5e89b238bf34bbaf23de4f51f86f2de",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "lockTime",
+          "type": "datetime",
+          "notNull": true,
+          "defaultValue": "2024-04-27T00:00:00.000Z"
+        },
+        "table": "schedule"
+      }
+    }
+  ]
+}

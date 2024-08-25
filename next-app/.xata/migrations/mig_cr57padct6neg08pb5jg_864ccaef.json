@@ -1,0 +1,18 @@
+{
+  "id": "mig_cr57padct6neg08pb5jg",
+  "parentID": "mig_cr57oqtct6neg08pb5ig",
+  "checksum": "1:864ccaef28d392ff3b8132a723af864340b5b42b7613dff2a9f1aefe57a0e229",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "startDate",
+          "type": "datetime",
+          "notNull": true,
+          "defaultValue": "2024-04-27T00:00:00.000Z"
+        },
+        "table": "schedule"
+      }
+    }
+  ]
+}

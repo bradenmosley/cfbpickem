@@ -1,0 +1,12 @@
+{
+  "id": "mig_cr54n85ct6neg08pb400",
+  "parentID": "mig_cr54lpdct6neg08pb3ug",
+  "checksum": "1:a6100d06dad8122e3247547b7caf7c4daa9c7b5cacf26efa12157702df3ed473",
+  "operations": [
+    {
+      "addTable": {
+        "table": "picks"
+      }
+    }
+  ]
+}

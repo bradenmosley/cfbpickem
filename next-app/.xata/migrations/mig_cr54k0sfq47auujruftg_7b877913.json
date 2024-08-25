@@ -1,0 +1,16 @@
+{
+  "id": "mig_cr54k0sfq47auujruftg",
+  "parentID": "mig_cr54jtlct6neg08pb3mg",
+  "checksum": "1:7b8779130574d11d010df9727d884d5f419de808b3466bfe8b79defec1f6e782",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "awayTeam",
+          "type": "text"
+        },
+        "table": "games"
+      }
+    }
+  ]
+}

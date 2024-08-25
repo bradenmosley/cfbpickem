@@ -1,0 +1,13 @@
+{
+  "id": "mig_cr57o2tct6neg08pb5gg",
+  "parentID": "mig_cr57o15ct6neg08pb5fg",
+  "checksum": "1:4ed3608971cc52aedaa59a7b8bd3bcbad42033e531e1aacdbe051d7b92204aa5",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "weekNumber",
+        "table": "schedule"
+      }
+    }
+  ]
+}

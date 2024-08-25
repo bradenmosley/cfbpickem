@@ -1,0 +1,18 @@
+{
+  "id": "mig_cr57rk5ct6neg08pb5og",
+  "parentID": "mig_cr57rciamasho2va07e0",
+  "checksum": "1:fd924a922cab5ca5e27b5bc1730e4cfbe729e76d20f2eb28562855c48c6fb3d3",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "userId",
+          "type": "text",
+          "notNull": true,
+          "defaultValue": "null"
+        },
+        "table": "picks"
+      }
+    }
+  ]
+}

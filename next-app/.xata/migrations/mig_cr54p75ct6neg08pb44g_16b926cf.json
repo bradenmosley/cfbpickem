@@ -1,0 +1,16 @@
+{
+  "id": "mig_cr54p75ct6neg08pb44g",
+  "parentID": "mig_cr54p3dct6neg08pb43g",
+  "checksum": "1:16b926cf1bc33fe018947c9a978db8ee5c4db16ac32398d23f9d8151951455bf",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "weekNumber",
+          "type": "int"
+        },
+        "table": "winners"
+      }
+    }
+  ]
+}

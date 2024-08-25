@@ -1,0 +1,18 @@
+{
+  "id": "mig_cr57jkaamasho2va0750",
+  "parentID": "mig_cr57jgqamasho2va0740",
+  "checksum": "1:09136a708bd4495b61f3ea9d8e9cc1690e44781326a6efe9328e8d6fe2294fbd",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "gameNumber",
+          "type": "int",
+          "notNull": true,
+          "defaultValue": "0"
+        },
+        "table": "games"
+      }
+    }
+  ]
+}

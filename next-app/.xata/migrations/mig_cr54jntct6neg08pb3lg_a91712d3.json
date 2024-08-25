@@ -1,0 +1,16 @@
+{
+  "id": "mig_cr54jntct6neg08pb3lg",
+  "parentID": "mig_cr54e8lct6neg08pb3ig",
+  "checksum": "1:a91712d308c6cca9c57bac188953a1531c10b0df32cd34f131e302c9c9a9ee83",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "weekNumber",
+          "type": "int"
+        },
+        "table": "games"
+      }
+    }
+  ]
+}

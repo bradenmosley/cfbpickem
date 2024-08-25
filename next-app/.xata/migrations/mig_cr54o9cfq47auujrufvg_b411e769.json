@@ -1,0 +1,16 @@
+{
+  "id": "mig_cr54o9cfq47auujrufvg",
+  "parentID": "mig_cr54nqlct6neg08pb420",
+  "checksum": "1:b411e769a9f7a3100216aadafc0477bcf55fc1a21e499b0e9770ef22a98554dc",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "pick",
+          "type": "text"
+        },
+        "table": "picks"
+      }
+    }
+  ]
+}

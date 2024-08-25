@@ -1,0 +1,13 @@
+{
+  "id": "mig_cr54lblct6neg08pb3rg",
+  "parentID": "mig_cr54latct6neg08pb3og",
+  "checksum": "1:61f7285eae5ed2ce7756edc682a20df6fb5c80649cdf1e5f4691ca2035de73a2",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "gameNumber",
+        "table": "games"
+      }
+    }
+  ]
+}

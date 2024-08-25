@@ -1,0 +1,16 @@
+{
+  "id": "mig_cr54pqtct6neg08pb4b0",
+  "parentID": "mig_cr54pn5ct6neg08pb4a0",
+  "checksum": "1:da0c42a31306722d05ec11c02472d2e92162a679ae67f1198b545a91932d8c2c",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "wins",
+          "type": "int"
+        },
+        "table": "records"
+      }
+    }
+  ]
+}

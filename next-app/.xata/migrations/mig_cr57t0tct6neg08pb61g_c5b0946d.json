@@ -1,0 +1,18 @@
+{
+  "id": "mig_cr57t0tct6neg08pb61g",
+  "parentID": "mig_cr57stiamasho2va07l0",
+  "checksum": "1:c5b0946dc861fcf9d1c24a4f4f6f646a611e69811a976d3ebf25778611c2e4da",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "gameNumber",
+          "type": "int",
+          "notNull": true,
+          "defaultValue": "0"
+        },
+        "table": "winners"
+      }
+    }
+  ]
+}

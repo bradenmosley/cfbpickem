@@ -1,0 +1,16 @@
+{
+  "id": "mig_cr57ndiamasho2va07ag",
+  "parentID": "mig_cr57mniamasho2va0770",
+  "checksum": "1:3af14913aa23d400c484108a4e8439f81a0ab769e91d184dfdbf3e5d17e36725",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "logo",
+          "type": "file"
+        },
+        "table": "teams"
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "mig_cr57s3dct6neg08pb5vg",
+  "parentID": "mig_cr57s2lct6neg08pb5ug",
+  "checksum": "1:ec89209f9a201bf34b4a309986e2b06455bb85e36865ee8e15fc3330c147696c",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "losses",
+        "table": "records"
+      }
+    }
+  ]
+}
