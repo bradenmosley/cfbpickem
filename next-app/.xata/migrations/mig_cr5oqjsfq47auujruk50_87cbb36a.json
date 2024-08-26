@@ -1,0 +1,13 @@
+{
+  "id": "mig_cr5oqjsfq47auujruk50",
+  "parentID": "mig_cr5oqesfq47auujruk40",
+  "checksum": "1:87cbb36a053599b218059e07ba24ba60267fd6a81d1389eaa9a915a267fbb57c",
+  "operations": [
+    {
+      "removeColumn": {
+        "column": "gameNumber",
+        "table": "winners"
+      }
+    }
+  ]
+}

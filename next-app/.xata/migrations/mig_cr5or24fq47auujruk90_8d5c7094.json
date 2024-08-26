@@ -1,0 +1,16 @@
+{
+  "id": "mig_cr5or24fq47auujruk90",
+  "parentID": "mig_cr5oqvkfq47auujruk80",
+  "checksum": "1:8d5c709446cbb2ea54ef6ec57f8fe846c24c4147ec0473d1a7b7f08ef7f876ef",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "teams",
+          "type": "multiple"
+        },
+        "table": "winners"
+      }
+    }
+  ]
+}

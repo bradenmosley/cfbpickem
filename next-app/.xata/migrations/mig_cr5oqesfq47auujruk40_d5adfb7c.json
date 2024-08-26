@@ -1,0 +1,16 @@
+{
+  "id": "mig_cr5oqesfq47auujruk40",
+  "parentID": "mig_cr5oqckfq47auujruk30",
+  "checksum": "1:d5adfb7c15d1ec9b33e84b5e31155ff905ab28f0e165d113b0e30201e3f851e8",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "picks",
+          "type": "multiple"
+        },
+        "table": "picks"
+      }
+    }
+  ]
+}

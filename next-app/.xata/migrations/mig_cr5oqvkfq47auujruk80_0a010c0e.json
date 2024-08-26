@@ -1,0 +1,16 @@
+{
+  "id": "mig_cr5oqvkfq47auujruk80",
+  "parentID": "mig_cr5oqssfq47auujruk70",
+  "checksum": "1:0a010c0e38a7534f25a60a592c3eabd7add9c094780627d5681563356c9e25b0",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "teams",
+          "type": "multiple"
+        },
+        "table": "picks"
+      }
+    }
+  ]
+}

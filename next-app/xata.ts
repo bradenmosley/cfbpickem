@@ -22,16 +22,14 @@ const tables = [
     columns: [
       { name: "userId", type: "text", notNull: true, defaultValue: "null" },
       { name: "weekNumber", type: "int", notNull: true, defaultValue: "0" },
-      { name: "gameNumber", type: "int", notNull: true, defaultValue: "0" },
-      { name: "pick", type: "text", notNull: true, defaultValue: "null" },
+      { name: "teams", type: "multiple" },
     ],
   },
   {
     name: "winners",
     columns: [
       { name: "weekNumber", type: "int", notNull: true, defaultValue: "0" },
-      { name: "gameNumber", type: "int", notNull: true, defaultValue: "0" },
-      { name: "team", type: "text", notNull: true, defaultValue: "null" },
+      { name: "teams", type: "multiple" },
     ],
   },
   {

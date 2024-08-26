@@ -1,57 +1,49 @@
-import { getXataClient, TeamsRecord } from "@/xata";
+import { getXataClient } from "@/xata";
+import Image from "next/image";
+import Team from "./Team";
 
 const xata = getXataClient();
 
 export default async function Game({
+  gameNumber,
   awayTeam,
   homeTeam,
   location,
 }: {
+  gameNumber: number;
   awayTeam: string;
   homeTeam: string;
   location: string;
 }) {
-  const awayTeamLogo = await xata.db.teams
-    .filter({ teamName: awayTeam })
-    .getFirst();
-  const homeTeamLogo = await xata.db.teams
-    .filter({ teamName: homeTeam })
-    .getFirst();
+  let awayLogo: string | undefined = "";
+  let homeLogo: string | undefined = "";
 
-  const awayTeamLogoURL = awayTeamLogo?.toSerializable().logo?.url;
-  const homeTeamLogoURL = homeTeamLogo?.toSerializable().logo?.url;
+  const queryAwayLogo = await xata.db.teams
+    .filter({ teamName: awayTeam })
+    .getFirst()
+    .then((result) => (awayLogo = result?.logo?.url));
+
+  const queryHomeLogo = await xata.db.teams
+    .filter({ teamName: homeTeam })
+    .getFirst()
+    .then((result) => (homeLogo = result?.logo?.url));
+
+  Promise.all([queryAwayLogo, queryHomeLogo]);
+
+  if (awayLogo === undefined) {
+    awayLogo = "/helmet.svg";
+  }
+  if (homeLogo === undefined) {
+    homeLogo = "/helmet.svg";
+  }
 
   return (
     <>
-      <p>--- Game Card ---</p>
-      <form>
-        <div>
-          <div>
-            <input
-              type="radio"
-              name={homeTeam}
-              id={awayTeam}
-              value={awayTeam}
-              required
-            />
-            <label htmlFor={awayTeam}>{awayTeam}</label>
-          </div>
-
-          <div>
-            <input
-              type="radio"
-              name={homeTeam}
-              id={homeTeam}
-              value={homeTeam}
-            />
-            <label htmlFor={homeTeam}>{homeTeam}</label>
-          </div>
-        </div>
-      </form>
-      <p>{location}</p>
-      <img src={awayTeamLogoURL} className="w-8 h-8" />
-      <img src={homeTeamLogoURL} className="w-16" />
-      <p>--- --- --- ---</p>
+      <div className="flex flex-col w-full p-4 gap-1 rounded-xl bg-slate-400">
+        <Team gameNumber={gameNumber} team={awayTeam} logo={awayLogo} />
+        <Team gameNumber={gameNumber} team={homeTeam} logo={homeLogo} />
+        <p>{location}</p>
+      </div>
     </>
   );
 }
