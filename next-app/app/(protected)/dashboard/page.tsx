@@ -14,7 +14,7 @@ export default function Page() {
 
       <Link
         href="/picks"
-        className="flex flex-col gap-2 p-4 aspect-square justify-center items-center bg-slate-800 border-2 border-slate-700 rounded-xl"
+        className="flex flex-col gap-2 p-4 aspect-square justify-center items-center bg-slate-800 border-2 border-slate-700 rounded-xl shadow-md"
       >
         <ListBulletIcon className="size-20" />
         Picks

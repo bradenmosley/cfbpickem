@@ -7,7 +7,7 @@ export default async function Page() {
   const weeks = await xata.sql<Schedule>`SELECT "weekNumber" FROM schedule`;
 
   return (
-    <div className="m-auto grid grid-cols-2 max-w-screen-sm bg-slate-800 border border-slate-400 rounded-lg text-center px-8 py-4">
+    <div className="m-auto grid grid-cols-2 max-w-screen-sm bg-slate-800 border border-slate-400 rounded-lg text-center px-8 py-4 shadow-md">
       <div className="grid grid-cols-1 gap-4 h-min">
         <p className="border-b border-slate-400">Week #</p>
         {weeks.records.map((week, key) => (

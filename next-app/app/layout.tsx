@@ -7,7 +7,6 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "CFB Pick Em",
-  description: "A BMos Development",
 };
 
 export default function RootLayout({

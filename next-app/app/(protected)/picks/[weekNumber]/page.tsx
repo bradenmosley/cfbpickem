@@ -32,7 +32,7 @@ export default async function Page({
         <button
           type="submit"
           id="submit"
-          className="px-1 py-2 rounded-full bg-slate-600 font-semibold hover:bg-slate-500"
+          className="px-1 py-2 rounded-full bg-slate-600 font-semibold hover:bg-slate-500 shadow-md"
         >
           Submit
         </button>

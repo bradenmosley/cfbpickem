@@ -38,7 +38,7 @@ export default async function Game({
   }
 
   return (
-    <div className="flex flex-col w-full px-8 py-4 gap-2 rounded-xl bg-slate-800">
+    <div className="flex flex-col w-full px-8 py-4 gap-2 rounded-xl bg-slate-800 shadow-md">
       <Team
         gameNumber={gameNumber}
         team={awayTeam}
