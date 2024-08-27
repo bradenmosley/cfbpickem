@@ -9,7 +9,7 @@ const xata = getXataClient();
 export async function submitPicks(formData: FormData) {
   const { userId } = auth();
   if (!userId) {
-    redirect("/app/error");
+    redirect("/error");
   }
 
   const rawFormData = Object.fromEntries(formData.entries());
@@ -29,8 +29,8 @@ export async function submitPicks(formData: FormData) {
       teams: teamsPicked,
     });
   } catch (error) {
-    redirect("/app/error");
+    redirect("/error");
   }
 
-  redirect("/app/success");
+  redirect("/success");
 }

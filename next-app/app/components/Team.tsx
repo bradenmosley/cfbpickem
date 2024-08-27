@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 
 function createGameNumberKey(number: number) {
@@ -5,44 +7,59 @@ function createGameNumberKey(number: number) {
 }
 
 const imageStyle = {
-  //   maxHeight: "60px",
-  //   maxWidth: "100%",
   width: "auto",
-  height: "60px",
+  height: "40px",
 };
 
 export default function Team({
   gameNumber,
   team,
   logo,
+  required,
 }: {
   gameNumber: number;
   team: string;
   logo: string;
+  required: boolean;
 }) {
   return (
-    <div className="group rounded-full px-8 py-4 bg-slate-600 has-[:checked]:bg-indigo-50 has-[:checked]:text-indigo-900 has-[:checked]:ring-indigo-200">
-      <input
-        type="radio"
-        name={createGameNumberKey(gameNumber)}
-        id={team}
-        value={team}
-        required
-        className="hidden"
-      />
+    <div className="group rounded-full px-8 py-4 bg-slate-700 has-[:checked]:bg-slate-300 has-[:checked]:text-slate-900 has-[:hover]:bg-slate-600 has-[:hover:checked]:bg-slate-300">
+      {required ? (
+        <input
+          type="radio"
+          name={createGameNumberKey(gameNumber)}
+          id={team}
+          value={team}
+          required
+          className="hidden"
+          onInvalid={(e) =>
+            alert(
+              "You forgot to pick game number ".concat(gameNumber.toString())
+            )
+          }
+        />
+      ) : (
+        <input
+          type="radio"
+          name={createGameNumberKey(gameNumber)}
+          id={team}
+          value={team}
+          className="hidden"
+        />
+      )}
       <label
         htmlFor={team}
-        className="grid grid-cols-3 w-full items-center justify-items-center"
+        className="grid grid-cols-3 w-full items-center justify-items-center cursor-pointer"
       >
         <Image
           src={logo}
-          width={60}
-          height={60}
+          width={40}
+          height={40}
           alt={team.concat(" logo")}
           unoptimized
           style={imageStyle}
         />
-        <p className="grid-cols-subgrid col-span-2 font-medium text-2xl">
+        <p className="grid-cols-subgrid col-span-2 text-lg font-medium">
           {team}
         </p>
       </label>

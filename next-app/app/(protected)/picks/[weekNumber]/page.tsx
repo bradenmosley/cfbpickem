@@ -13,11 +13,12 @@ export default async function Page({
     await xata.sql<GamesRecord>`SELECT "awayTeam", "homeTeam", location FROM games WHERE "weekNumber" = ${params.weekNumber}`;
 
   return (
-    <>
-      <h1>Picks</h1>
-      <h4>{params.weekNumber}</h4>
+    <div className="flex flex-col gap-4 max-w-[500px] pb-24 m-auto">
+      <p className="text-center text-3xl font-semibold">
+        Week {params.weekNumber}
+      </p>
 
-      <form action={submitPicks}>
+      <form action={submitPicks} className="flex flex-col gap-6">
         {games.records.map((index, key) => (
           <Game
             key={key}
@@ -28,10 +29,14 @@ export default async function Page({
           />
         ))}
         <input type="hidden" name="weekNumber" value={params.weekNumber} />
-        <button type="submit" id="submit">
+        <button
+          type="submit"
+          id="submit"
+          className="px-1 py-2 rounded-full bg-slate-600 font-semibold hover:bg-slate-500"
+        >
           Submit
         </button>
       </form>
-    </>
+    </div>
   );
 }

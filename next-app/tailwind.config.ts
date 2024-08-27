@@ -14,6 +14,10 @@ const config: Config = {
       },
     },
   },
+  future: {
+    hoverOnlyWhenSupported: true,
+  },
   plugins: [require("@tailwindcss/forms")],
 };
+
 export default config;
