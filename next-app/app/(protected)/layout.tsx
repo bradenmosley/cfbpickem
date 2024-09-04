@@ -1,7 +1,33 @@
 import { UserButton } from "@clerk/nextjs";
 import Link from "next/link";
+import {
+  ListBulletIcon,
+  ChartBarIcon,
+  HomeIcon,
+} from "@heroicons/react/24/solid";
 
-export default function Layout({ children }: { children: React.ReactNode }) {
+import { getXataClient, Schedule } from "@/xata";
+
+const xata = getXataClient();
+
+export default async function Layout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  const weeks =
+    await xata.sql<Schedule>`SELECT "weekNumber", "startDate", "endDate" FROM schedule`;
+  const today = new Date();
+  let currentWeekNumber = 0;
+
+  weeks.records.forEach((week) => {
+    const startDate = new Date(week.startDate);
+    if (today >= startDate) {
+      const endDate = new Date(week.endDate);
+      if (today <= endDate) currentWeekNumber = week.weekNumber;
+    }
+  });
+
   return (
     <>
       <nav className="sticky top-0 z-10 flex px-6 py-3 justify-between items-center bg-slate-900/95 border-b border-slate-700 shadow">
@@ -10,7 +36,31 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         </Link>
         <UserButton />
       </nav>
-      <main className="px-6 py-6">{children}</main>
+
+      <div className="grid grid-cols-3 mx-6 my-6 px-6 py-6 gap-3 text-center rounded-xl bg-slate-700">
+        <Link
+          href="/dashboard"
+          className="flex flex-col items-center border-r border-slate-500"
+        >
+          <HomeIcon className="size-10" />
+          Home
+        </Link>
+
+        <Link href="/leaderboard" className="flex flex-col items-center">
+          <ChartBarIcon className="size-10" />
+          Leaderboard
+        </Link>
+
+        <Link
+          href={"/picks/".concat(currentWeekNumber.toString())}
+          className="flex flex-col items-center border-l border-slate-500"
+        >
+          <ListBulletIcon className="size-10" />
+          Picks
+        </Link>
+      </div>
+
+      <main className="px-6">{children}</main>
     </>
   );
 }

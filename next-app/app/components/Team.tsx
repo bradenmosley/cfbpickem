@@ -7,8 +7,8 @@ function createGameNumberKey(number: number) {
 }
 
 const imageStyle = {
-  width: "auto",
   height: "40px",
+  width: "auto",
 };
 
 export default function Team({
@@ -18,8 +18,8 @@ export default function Team({
   required,
 }: {
   gameNumber: number;
-  team: string;
-  logo: string;
+  team: string | undefined;
+  logo: string | undefined;
   required: boolean;
 }) {
   return (
@@ -52,10 +52,10 @@ export default function Team({
         className="grid grid-cols-3 w-full items-center justify-items-center cursor-pointer"
       >
         <Image
-          src={logo}
+          src={logo === undefined ? "/helmet.svg" : logo}
           width={40}
           height={40}
-          alt={team.concat(" logo")}
+          alt={team === undefined ? "a logo" : team.concat(" logo")}
           unoptimized
           style={imageStyle}
         />

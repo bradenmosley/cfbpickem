@@ -1,0 +1,18 @@
+{
+  "id": "mig_crbo1jccbd9a2ve5k4k0",
+  "parentID": "mig_crbo1du44ppr41abp610",
+  "checksum": "1:74e145d60435caf7ed6c63d015dc6846fdccdb21996de03b40cfcf0fce91053e",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "gameNumber",
+          "type": "int",
+          "notNull": true,
+          "defaultValue": "0"
+        },
+        "table": "games"
+      }
+    }
+  ]
+}

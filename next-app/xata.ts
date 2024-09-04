@@ -8,16 +8,6 @@ import type {
 
 const tables = [
   {
-    name: "games",
-    columns: [
-      { name: "weekNumber", type: "int", notNull: true, defaultValue: "0" },
-      { name: "gameNumber", type: "int", notNull: true, defaultValue: "0" },
-      { name: "awayTeam", type: "text", notNull: true, defaultValue: "null" },
-      { name: "homeTeam", type: "text", notNull: true, defaultValue: "null" },
-      { name: "location", type: "text", notNull: true, defaultValue: "null" },
-    ],
-  },
-  {
     name: "picks",
     columns: [
       { name: "userId", type: "text", notNull: true, defaultValue: "null" },
@@ -71,14 +61,25 @@ const tables = [
       { name: "teamName", type: "text", notNull: true, defaultValue: "null" },
       { name: "logo", type: "file", file: { defaultPublicAccess: true } },
     ],
+    revLinks: [
+      { column: "awayTeam", table: "games" },
+      { column: "homeTeam", table: "games" },
+    ],
+  },
+  {
+    name: "games",
+    columns: [
+      { name: "weekNumber", type: "int", notNull: true, defaultValue: "0" },
+      { name: "gameNumber", type: "int", notNull: true, defaultValue: "0" },
+      { name: "location", type: "text" },
+      { name: "awayTeam", type: "link", link: { table: "teams" } },
+      { name: "homeTeam", type: "link", link: { table: "teams" } },
+    ],
   },
 ] as const;
 
 export type SchemaTables = typeof tables;
 export type InferredTypes = SchemaInference<SchemaTables>;
-
-export type Games = InferredTypes["games"];
-export type GamesRecord = Games & XataRecord;
 
 export type Picks = InferredTypes["picks"];
 export type PicksRecord = Picks & XataRecord;
@@ -95,13 +96,16 @@ export type ScheduleRecord = Schedule & XataRecord;
 export type Teams = InferredTypes["teams"];
 export type TeamsRecord = Teams & XataRecord;
 
+export type Games = InferredTypes["games"];
+export type GamesRecord = Games & XataRecord;
+
 export type DatabaseSchema = {
-  games: GamesRecord;
   picks: PicksRecord;
   winners: WinnersRecord;
   records: RecordsRecord;
   schedule: ScheduleRecord;
   teams: TeamsRecord;
+  games: GamesRecord;
 };
 
 const DatabaseClient = buildClient();
