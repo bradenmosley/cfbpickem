@@ -2,6 +2,7 @@ import { getXataClient } from "@/xata";
 import GameForm from "@/app/components/GameForm";
 import { GameInfo } from "@/app/utils/types";
 import GameSkeleton from "@/app/components/GameSkeleton";
+import { submitPicks } from "../utils/submitPicks";
 
 const xata = getXataClient();
 
@@ -45,7 +46,9 @@ export default async function QueryGames({
   return (
     <>
       <p className="text-center text-3xl font-semibold">Week {weekNumber}</p>
-      <GameForm gameList={gameList} weekNumber={weekNumber} />
+      <form action={submitPicks} className="flex flex-col gap-6">
+        <GameForm gameList={gameList} weekNumber={weekNumber} />
+      </form>
     </>
   );
 }
