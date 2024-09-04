@@ -59,7 +59,7 @@ export default function Team({
           unoptimized
           style={imageStyle}
         />
-        <p className="grid-cols-subgrid col-span-2 text-lg font-medium">
+        <p className="grid-cols-subgrid col-span-2 text-lg font-medium text-center">
           {team}
         </p>
       </label>
