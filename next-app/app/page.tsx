@@ -2,6 +2,10 @@ import { SignInButton } from "@clerk/nextjs";
 import { ArrowLeftEndOnRectangleIcon } from "@heroicons/react/24/solid";
 import Image from "next/image";
 
+/*
+Landing Page
+*/
+
 export default function Home() {
   return (
     <main className="flex min-h-svh flex-col items-center justify-center px-8 gap-8 m-auto">

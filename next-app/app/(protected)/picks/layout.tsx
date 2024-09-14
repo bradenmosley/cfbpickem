@@ -3,6 +3,11 @@ import { getXataClient, Schedule } from "@/xata";
 
 const xata = getXataClient();
 
+/*
+Layout for the Picks pages
+Queries every week and its details for the Week Number Buttons
+*/
+
 export default async function Layout({
   children,
 }: {

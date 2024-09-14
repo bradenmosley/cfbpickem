@@ -10,16 +10,22 @@ import { getXataClient, Schedule } from "@/xata";
 
 const xata = getXataClient();
 
+/*
+Layout for the main app
+*/
+
 export default async function Layout({
   children,
 }: {
   children: React.ReactNode;
 }) {
+  // Queries every week and its starting and ending dates
   const weeks =
     await xata.sql<Schedule>`SELECT "weekNumber", "startDate", "endDate" FROM schedule`;
   const today = new Date();
   let currentWeekNumber = 0;
 
+  // Compares each week queried to today to find the current week number
   weeks.records.forEach((week) => {
     const startDate = new Date(week.startDate);
     if (today >= startDate) {
@@ -30,6 +36,7 @@ export default async function Layout({
 
   return (
     <>
+      {/* Top Header */}
       <nav className="sticky top-0 z-10 flex px-6 py-3 justify-between items-center bg-slate-900/95 border-b border-slate-700 shadow">
         <Link href="/dashboard" className="text-xl font-medium">
           CFB Pick Em
@@ -37,6 +44,7 @@ export default async function Layout({
         <UserButton />
       </nav>
 
+      {/* Navigation buttons */}
       <div className="grid grid-cols-3 mx-6 my-6 px-6 py-6 gap-3 text-center rounded-xl bg-slate-700">
         <Link
           href="/dashboard"

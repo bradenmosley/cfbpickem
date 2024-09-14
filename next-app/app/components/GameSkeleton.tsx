@@ -1,3 +1,7 @@
+/*
+Loading skeleton in the shape of a Game component
+*/
+
 export default function GameSkeleton() {
   return (
     <div className="flex flex-col gap-4 animate-pulse">

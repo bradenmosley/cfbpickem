@@ -3,6 +3,11 @@ import QueryGames from "@/app/components/QueryGames";
 import { Suspense } from "react";
 import GameSkeleton from "@/app/components/GameSkeleton";
 
+/*
+Picks Page
+Receives the week number from the url param and uses it to query the corresponding week's game
+*/
+
 export default function Page({ params }: { params: { weekNumber: number } }) {
   // Used to update the weekNumberButton styling
   revalidatePath("/picks/[weekNumber]", "layout");

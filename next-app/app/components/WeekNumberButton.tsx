@@ -4,6 +4,12 @@ import Link from "next/link";
 import clsx from "clsx";
 import { useParams } from "next/navigation";
 
+/*
+Week Number Button Component
+Checks the url param to see which week number page is displayed
+  and highlights the corresponding button
+*/
+
 export default function WeekNumberButton({
   weekNumber,
   currentWeekNumber,

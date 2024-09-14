@@ -11,6 +11,13 @@ const imageStyle = {
   width: "auto",
 };
 
+/*
+Team Component
+Creates a radio button and its label for the given team
+Required is specified so it will only be set for one team in a given game
+  allowing the alert message to only pop up once and not twice for each team
+*/
+
 export default function Team({
   gameNumber,
   team,

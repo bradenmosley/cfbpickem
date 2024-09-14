@@ -1,6 +1,11 @@
 import { Schedule } from "@/xata";
 import WeekNumberButton from "./WeekNumberButton";
 
+/*
+Creates a Week Number Button for each week in the list received
+Determines the current week number based on today's date
+*/
+
 export default function WeekNumberRow({ weekList }: { weekList: Schedule[] }) {
   const today = new Date();
   let currentWeekNumber = 0;
@@ -8,6 +13,7 @@ export default function WeekNumberRow({ weekList }: { weekList: Schedule[] }) {
   return (
     <div className="flex gap-4">
       {weekList.map((week, key) => {
+        // Compares each week in the list to today to find the current week number
         const startDate = new Date(week.startDate);
         if (today >= startDate) {
           const endDate = new Date(week.endDate);

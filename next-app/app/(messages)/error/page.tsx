@@ -4,6 +4,11 @@ import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { ExclamationCircleIcon } from "@heroicons/react/24/solid";
 
+/*
+Page for error messages
+Receives a url search param based on the type of error then shows the corresponding message
+*/
+
 export default function Page() {
   const searchParams = useSearchParams();
   const type = searchParams.get("type");
