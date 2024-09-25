@@ -11,7 +11,7 @@ export default function WeekNumberRow({ weekList }: { weekList: Schedule[] }) {
   let currentWeekNumber = 0;
 
   return (
-    <div className="flex gap-4">
+    <div className="flex gap-4 overflow-auto pb-2">
       {weekList.map((week, key) => {
         // Compares each week in the list to today to find the current week number
         const startDate = new Date(week.startDate);

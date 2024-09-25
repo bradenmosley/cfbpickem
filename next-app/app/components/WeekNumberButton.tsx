@@ -26,7 +26,7 @@ export default function WeekNumberButton({
   return (
     <Link
       href={`/picks/${weekNumber}`}
-      className={clsx("rounded-full px-3 py-1", {
+      className={clsx("rounded-full px-3 py-1 whitespace-nowrap", {
         "bg-sky-500": isCurrentWeek == true,
         "bg-slate-500": isSelected == true,
         "bg-slate-700": isSelected == false && isCurrentWeek == false,
